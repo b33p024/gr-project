@@ -6,7 +6,11 @@ import os.path
 import sys
 
 ############################################################################
+#               pip3 install nfstream
+#
 #               python3 tls_printer.py <pcap_file>
+#
+#               
 ############################################################################
 
 #file containing top 1000 most visited sites
