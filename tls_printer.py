@@ -6,6 +6,9 @@ import os.path
 import sys
 
 ############################################################################
+#               Print stats about TLS flows inside a pcap file                
+#
+#               requirements:
 #               pip3 install nfstream
 #
 #               python3 tls_printer.py <pcap_file>
