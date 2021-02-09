@@ -6,10 +6,7 @@ import os.path
 import sys
 
 ############################################################################
-#               TODO TODO TODO TODO
-#               Merge TLS.Unknown traffic
-#               Make output better (Pandas ?)
-#               Analyze http traffic (scapy ?)
+#               python3 tls_printer.py <pcap_file>
 ############################################################################
 
 #file containing top 1000 most visited sites
