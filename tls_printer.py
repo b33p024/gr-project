@@ -6,13 +6,6 @@ import os.path
 import sys
 import socket
 
-############################################################################
-#               TODO TODO TODO TODO
-#               Merge the same traffic even the non TLS.Unknown
-#               ) raggruppi sgli SNI del TLS e li validi per esistenza (risoluzione nome e verifichi che l'IP del server corrisponda)    
-#gethostbyname
-#whois
-############################################################################
 
 #file containing top 1000 most visited sites
 FILENAME="top10k.txt"
