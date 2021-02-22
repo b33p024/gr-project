@@ -33,6 +33,9 @@ def print_tls_flows(tls_dict,total_packets):
         #
         for flow in sorted_flows:
             perc=round((flow.bidirectional_packets*100)/pkt_count,2)
+            if not flow.requested_server_name:
+                print("                   "+ flow.application_name + "  --  "+flow.src_ip+"  --  "+flow.dst_ip+ " ("+str(perc)+"%)" )
+                continue
             if socket.gethostbyname(flow.requested_server_name) == flow.dst_ip :
                 print("                   "+ flow.application_name + "  --  "+flow.src_ip+"  --  "+flow.dst_ip+ "  --  "+flow.requested_server_name+ " ("+str(perc)+"%)  --  SNI authenticated" )
             else:
