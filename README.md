@@ -38,7 +38,8 @@ Nfstream flow-based aggregation consists of aggregating packets into flows based
   
   TODO: add a better format to save the output file (e.g csv )
   
-## Examples:
+## Examples:  
+  ![](images/1.png)
   
     
   
