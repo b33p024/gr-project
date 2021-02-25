@@ -30,7 +30,7 @@ Nfstream flow-based aggregation consists of aggregating packets into flows based
   
   Note that tcpdump requires sudo privileges to run, so you may run it as super user.
 
-  When you got the pcap file you can run the program properly:
+  When you got the pcap file you can run the program:
   > python3 tls_printer.py pcap_files/traffic.pcap
   
   To save the output for further read: 
