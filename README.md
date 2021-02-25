@@ -10,11 +10,11 @@ Nfstream flow-based aggregation consists of aggregating packets into flows based
   > pip3 install nfstream
   
 ## Description:
-  For each host inside the file pcap prints:  
-    The amout of traffic it generated;  
-    The amout of traffic generated for each protocol detected;  
-    Tls statystics.
-### tls statystics:  
+  Print, for each host detected in the pcap file:  
+    The amout of traffic that host generated;  
+    The portion of traffic for each application layer protocol supported;
+    Tls statistics.
+### tls statistics:  
   It prints each TLS flow line by line in descending order by the amount of traffic.  
   For each flow , it detects what kind of traffic is over the TLS protocol (e.g TLS.stackoverflow, TLS.tesla, TLS.chess ) by checking if the requested server name is inside top10k.txt (top10k most visited sites), and validates SNIs for existence by resolving the hostname.
 
