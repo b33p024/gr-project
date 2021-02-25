@@ -13,7 +13,7 @@ Read from a file pcap, extract flows and give information about host-protocol di
     The amout of traffic it generated  
     The amout of traffic generated for each protocol detected  
 ### tls statystics:  
-  It prints each flow line by line in descending order by the amout of traffic.  
+  It prints each flow line by line in descending order by the amount of traffic.  
   For each flow, it detects what kind of traffic is over the TLS protocol (e.g TLS.stackoverflow , TLS.tesla , TLS.chess ) by checking if the requested server name is inside top10k.txt (top10k most visited sites), and validates SNIs for existance by resolving the hostname.
 
 ## Usage:  
