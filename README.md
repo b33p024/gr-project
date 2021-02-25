@@ -1,5 +1,5 @@
 # tls-analyzer
-Read from a file pcap, extract flows and give information about host-protocol distribution and more detailed information about tls traffic.
+Read from a file pcap, extract flows and give information about host-protocol distribution and gives information about tls traffic.
 
 ## Requirements:
   >[nfstream](https://github.com/nfstream/nfstream) *: 'a Python framework providing fast, flexible, and expressive data structures designed to make working with online or offline network data both easy and intuitive.'*  
