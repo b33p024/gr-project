@@ -19,7 +19,7 @@ Nfstream flow-based aggregation consists of aggregating packets into flows based
   For each flow , it detects what kind of traffic is over the TLS protocol (e.g TLS.stackoverflow, TLS.tesla, TLS.chess ) by checking if the requested server name is inside top10k.txt (top10k most visited sites), and validates SNIs for existence by resolving the hostname.
 
 ## Usage:  
-  This is a command line tool, it takes only one parameter and has to be a file pcap.  
+  This is a command line tool, it takes only one parameter and has to be a .pcap file.  
   
   You can generate a pcap file by using a networking tool like Wireshark (graphical), or by command line with tcpdump.  
   To capture a session with tcpdump:  
