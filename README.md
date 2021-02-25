@@ -3,6 +3,7 @@ Read from a file pcap, extract flows and give information about host-protocol di
 
 ## Requirements:
   >[nfstream](https://github.com/nfstream/nfstream) *: 'a Python framework providing fast, flexible, and expressive data structures designed to make working with online or offline network data both easy and intuitive.'*  
+Nfstream flow-based aggregation consists of aggregating packets into flows based on a shared set of characteristics (flow key, e.g., source IP address, destination IP address, transport protocol, source port, destination port, VLAN identifier).
   
 ## Installing requirements:  
   Use your current version of pip to install nfstream
@@ -10,11 +11,12 @@ Read from a file pcap, extract flows and give information about host-protocol di
   
 ## Description:
   For each host inside the file pcap prints:  
-    The amout of traffic it generated  
-    The amout of traffic generated for each protocol detected  
+    The amout of traffic it generated;  
+    The amout of traffic generated for each protocol detected;  
+    Tls statystics.
 ### tls statystics:  
-  It prints each flow line by line in descending order by the amount of traffic.  
-  For each flow, it detects what kind of traffic is over the TLS protocol (e.g TLS.stackoverflow, TLS.tesla, TLS.chess ) by checking if the requested server name is inside top10k.txt (top10k most visited sites), and validates SNIs for existence by resolving the hostname.
+  It prints each TLS flow line by line in descending order by the amount of traffic.  
+  For each flow , it detects what kind of traffic is over the TLS protocol (e.g TLS.stackoverflow, TLS.tesla, TLS.chess ) by checking if the requested server name is inside top10k.txt (top10k most visited sites), and validates SNIs for existence by resolving the hostname.
 
 ## Usage:  
   This is a command line tool, it takes only one parameter and has to be a file pcap.  
