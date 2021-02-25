@@ -24,9 +24,11 @@ Read from a file pcap, extract flows and give information about host-protocol di
   Indentify your network interface typing in terminal ifconfig (linux) or ipconfig (windows);  
   Once you know what network interface you are using, let's say it's name is 'mon0' :  
   > * start capture:  tcpdump -i mon0 -w pcap_files/traffic.pcap
-  > * end capture: CTLR-C
-    
-    
+  > * end capture: CTLR-C  
+  
+  Note that tcpdump requires sudo privileges to run, so you may run it as super user.
+
+  When you got the pcap file you can run the program
   > python3 tls_printer.py pcap_files/traffic.pcap
   
   For saving the output for further read  
