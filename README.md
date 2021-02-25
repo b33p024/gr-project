@@ -15,7 +15,7 @@ Nfstream flow-based aggregation consists of aggregating packets into flows based
     The portion of traffic for each application layer protocol supported;  
     Tls statistics.
 ### tls statistics:  
-  It prints each TLS flow line by line in descending order by the amount of traffic.  
+  Prints each TLS flow sorted by the amount of traffic.  
   For each flow , it detects what kind of traffic is over the TLS protocol (e.g TLS.stackoverflow, TLS.tesla, TLS.chess ) by checking if the requested server name is inside top10k.txt (top10k most visited sites), and validates SNIs for existence by resolving the hostname.
 
 ## Usage:  
