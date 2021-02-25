@@ -23,7 +23,9 @@ Read from a file pcap, extract flows and give information about host-protocol di
   For saving the output for further read  
   > python3 tls_printer.py pcap_files/traffic.pcap >> report.txt  
   
-  TODO: add better format for save the output file (e.g csv )
+  TODO: add better format to save the output file (e.g csv )
+  
+## Examples:
   
     
   
