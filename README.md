@@ -14,15 +14,15 @@ Read from a file pcap, extract flows and give information about host-protocol di
     The amout of traffic generated for each protocol detected  
 ### tls statystics:  
   It prints each flow line by line in descending order by the amount of traffic.  
-  For each flow, it detects what kind of traffic is over the TLS protocol (e.g TLS.stackoverflow , TLS.tesla , TLS.chess ) by checking if the requested server name is inside top10k.txt (top10k most visited sites), and validates SNIs for existance by resolving the hostname.
+  For each flow, it detects what kind of traffic is over the TLS protocol (e.g TLS.stackoverflow, TLS.tesla, TLS.chess ) by checking if the requested server name is inside top10k.txt (top10k most visited sites), and validates SNIs for existence by resolving the hostname.
 
 ## Usage:  
-  This is a command line tool, it takes only one parameter and has to be a file pcap .  
+  This is a command line tool, it takes only one parameter and has to be a file pcap.  
   
-  You can generate a pcap file by using a networking tool like wireshark (grafical), or by command line with tcpdump.  
+  You can generate a pcap file by using a networking tool like Wireshark (graphical), or by command line with tcpdump.  
   To capture a session with tcpdump:  
-  Indentify your network interface typing in terminal ifconfig (linux) or ipconfig (windows);  
-  Once you know what network interface you are using, let's say it's name is 'mon0' :  
+  Identify your network interface typing in terminal ifconfig (Linux) or ipconfig (Windows);  
+  Once you know what network interface you are using, let's say its name is 'mon0' :  
   > * start capture:  tcpdump -i mon0 -w pcap_files/traffic.pcap
   > * end capture: CTLR-C  
   
@@ -34,7 +34,7 @@ Read from a file pcap, extract flows and give information about host-protocol di
   For saving the output for further read  
   > python3 tls_printer.py pcap_files/traffic.pcap >> report.txt  
   
-  TODO: add better format to save the output file (e.g csv )
+  TODO: add a better format to save the output file (e.g csv )
   
 ## Examples:
   
