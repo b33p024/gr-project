@@ -9,7 +9,7 @@ Read from a file pcap, extract flows and give information about host-protocol di
   > pip3 install nfstream
   
 ## Description:
-  For each host prints:  
+  For each host inside the file pcap prints:  
     The amout of traffic it generated  
     The amout of traffic generated for each protocol detected  
 ### tls statystics:  
