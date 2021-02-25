@@ -5,7 +5,7 @@ Read from a file pcap, extract flows and give information about host-protocol di
   >[nfstream](https://github.com/nfstream/nfstream) *: 'a Python framework providing fast, flexible, and expressive data structures designed to make working with online or offline network data both easy and intuitive.'*  
   
 ## Installing requirements:  
-  Use your current version of pip for install nfstream
+  Use your current version of pip to install nfstream
   > pip3 install nfstream
   
 ## Description:
