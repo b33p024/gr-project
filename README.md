@@ -18,6 +18,15 @@ Read from a file pcap, extract flows and give information about host-protocol di
 
 ## Usage:  
   This is a command line tool, it takes only one parameter and has to be a file pcap .  
+  
+  You can generate a pcap file by using a networking tool like wireshark (grafical), or by command line with tcpdump.  
+  To capture a session with tcpdump:  
+  Indentify your network interface typing in terminal ifconfig (linux) or ipconfig (windows);  
+  Once you know what network interface you are using, let's say it's name is 'mon0' :  
+  > * start capture:  tcpdump -i mon0 -w pcap_files/traffic.pcap
+  > * end capture: CTLR-C
+    
+    
   > python3 tls_printer.py pcap_files/traffic.pcap
   
   For saving the output for further read  
