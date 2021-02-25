@@ -12,7 +12,7 @@ Nfstream flow-based aggregation consists of aggregating packets into flows based
 ## Description:
   Print, for each host detected in the pcap file:  
     The amout of traffic that host generated;  
-    The portion of traffic for each application layer protocol supported;
+    The portion of traffic for each application layer protocol supported;  
     Tls statistics.
 ### tls statistics:  
   It prints each TLS flow line by line in descending order by the amount of traffic.  
